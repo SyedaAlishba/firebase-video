@@ -30,7 +30,7 @@ function App() {
 
     const handleClick = () => {
         if (file === null) return;
-        const fileRef = ref(storage, `videos/${file.name}`)
+        const fileRef = ref(storage, `Videos/Ludo/${file.name}`)
         const uploadTask = uploadBytesResumable(fileRef, file)
 
         uploadTask.on('state_changed', (snapshot) => {
